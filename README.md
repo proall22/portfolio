@@ -31,7 +31,7 @@ portfolio/
 
 1. Clone the repository:
 
-   git clone [github link](https://github.com/yourusername/portfolio.git)
+   git clone [github link](https://github.com/proall22/portfolio.git)
    cd portfolio
 
 2. Open the `index.html` file in your favorite browser:
@@ -53,7 +53,7 @@ To personalize the site:
 
 ## Feel free to reach out if you'd like to collaborate or discuss opportunities:
 
-[Check out the live version here!](https://portfolio-tan-three-55.vercel.app/)
+[Check out the live version here!](https://portfolio-nu-two-87.vercel.app/)
 
 - **Email**: [email](misganategegn0@gmail.com)
 - **LinkedIn**: [linkedin.com/in/misgana-bb46bb288](https://linkedin.com/in/misgana-bb46bb288)
