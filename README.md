@@ -31,12 +31,8 @@ portfolio/
 
 1. Clone the repository:
 
-   ```bash
    git clone [github link](https://github.com/yourusername/portfolio.git)
    cd portfolio
-
-
-   ```
 
 2. Open the `index.html` file in your favorite browser:
    use vscode.
