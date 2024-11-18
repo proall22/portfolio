@@ -51,7 +51,7 @@ To personalize the site:
 
 ## 📸 Screenshots
 
-![Screenshot of the portfolio website](assets/portfolio-screenshot.png)
+!Screenshot of the portfolio website:- (assets/portfolio-screenshot.png)
 
 ## 👨‍💻 Contact
 
