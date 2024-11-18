@@ -32,7 +32,7 @@ portfolio/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone [github link](https://github.com/yourusername/portfolio.git)
    cd portfolio
 
 
@@ -51,12 +51,15 @@ To personalize the site:
 
 ## 📸 Screenshots
 
-!Screenshot of the portfolio website:- (assets/portfolio-screenshot.png)
+[!Screenshot of the portfolio website](assets/portfolio-screenshot.png)
 
 ## 👨‍💻 Contact
 
-Feel free to reach out if you'd like to collaborate or discuss opportunities:
+## Feel free to reach out if you'd like to collaborate or discuss opportunities:
 
-- **GitHub:** [github.com/proall22](https://github.com/yourusername)
+[Check out the live version here!](https://portfolio-tan-three-55.vercel.app/)
 
-[Check out the live version here!](https://yourwebsiteurl.com)
+- **Email**: [email](misganategegn0@gmail.com)
+- **LinkedIn**: [linkedin.com/in/misgana-bb46bb288](https://linkedin.com/in/misgana-bb46bb288)
+- **GitHub**: [github.com/proall22](https://github.com/proall22)
+- **Twitter**: [@Misgu2na](https://twitter.com/Misgu2na)
