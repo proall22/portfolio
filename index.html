@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script>
+			function toggleDescription(id) {
+				const description = document.getElementById(id);
+				const moreText = document.getElementById(`more-${id}`);
+				const btnText = document.getElementById(`btn-${id}`);
+
+				if (description.style.display === "none") {
+					description.style.display = "inline";
+					btnText.innerHTML = "Read less";
+					moreText.style.display = "none";
+				} else {
+					description.style.display = "none";
+					btnText.innerHTML = "Read more";
+					moreText.style.display = "inline";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<section class="header-section">
+			<div class="content-wrapper">
+				<!-- Navigation -->
+				<nav class="nav-menu">
+					<ul class="nav-links">
+						<a href="#home" class="nav-item">Home</a>
+						<a href="#about" class="nav-item">About</a>
+						<a href="#projects" class="nav-item">Projects</a>
+						<a href="#contact" class="nav-item">Contact</a>
+					</ul>
+					<div class="hamburger" id="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+				</nav>
+
+				<!-- Hero Section -->
+				<div class="hero-section">
+					<div class="hero-text">
+						<h1 class="hero-title">
+							I'm Misgana <br /><br />
+							<span style="font-size: 24px; font-weight: 300">
+								—a Software Engineer, Web Designer, Application Developer, and
+								Tester.
+							</span>
+						</h1>
+						<p class="hero-description">
+							I create secure, visually captivating digital experiences that
+							bring ideas to life with precision and creativity. Let's build
+							something exceptional together.
+						</p>
+					</div>
+					<img src="assets/laptop.png" alt="image-hero" class="hero-image" />
+				</div>
+
+				<!-- CTA Section -->
+				<div class="cta-section scroll-section">
+					<a href="#contact"
+						><button class="cta-button contact-button">Contact Me</button></a
+					>
+					<a href="#projects"
+						><button class="cta-button explore-button">
+							Explore My Work
+						</button></a
+					>
+				</div>
+
+				<!-- About Section -->
+				<h2 id="about" class="about-title scroll-section">About Me</h2>
+				<div class="about-section scroll-section">
+					<img
+						src="assets/laptopWithCoffee.png"
+						alt="Misgana's Profile"
+						class="about-image"
+					/>
+					<div class="about-text">
+						<p>
+							I’m Misgana, a passionate software engineer with a keen eye for
+							design. I specialize in web development and creating seamless user
+							experiences.
+						</p>
+						<p>
+							With years of experience in full-stack development, I work with
+							modern technologies like React, Node.js, Express.js, and
+							PostgreSQL to deliver performant, user-centric web applications.
+						</p>
+					</div>
+				</div>
+
+				<!-- Projects Section -->
+				<h2 id="projects" class="projects-title scroll-section">Projects</h2>
+				<div class="projects-section scroll-section">
+					<!-- Project 1 -->
+					<div class="project-card">
+						<img
+							src="assets/Ibm.png"
+							alt="Project screenshot"
+							class="project-image"
+						/>
+						<h3>AI-Powered Recommendation System</h3>
+						<p id="desc-1" style="display: none">
+							A personalized recommendation engine utilizing machine learning to
+							drive user engagement. Built with Python and TensorFlow, this
+							system analyzes user behavior and predicts future interactions for
+							an enhanced experience.
+						</p>
+						<p id="more-desc-1">
+							<span
+								style="cursor: pointer"
+								id="btn-desc-1"
+								onclick="toggleDescription('desc-1')"
+								>Read more</span
+							>
+						</p>
+						<p>
+							<strong>Tech Stack:</strong> Python, TensorFlow, PostgreSQL,
+							Docker
+						</p>
+					</div>
+					<!-- Project 2 -->
+					<div class="project-card">
+						<img
+							src="assets/ecom.png"
+							alt="Project screenshot"
+							class="project-image"
+						/>
+						<h3>Scalable E-Commerce Platform</h3>
+						<p id="desc-2" style="display: none">
+							A fully-featured e-commerce platform designed to handle thousands
+							of concurrent users, built with Node.js and React. This project
+							emphasizes performance, security, and a seamless user experience.
+						</p>
+						<p id="more-desc-2">
+							<span
+								style="cursor: pointer"
+								id="btn-desc-2"
+								onclick="toggleDescription('desc-2')"
+								>Read more</span
+							>
+						</p>
+						<p>
+							<strong>Tech Stack:</strong> Node.js, React, Express.js, MongoDB,
+							Redis, AWS
+						</p>
+					</div>
+					<!-- Project 3 -->
+					<div class="project-card">
+						<img
+							src="assets/data.png"
+							alt="Project screenshot"
+							class="project-image"
+						/>
+						<h3>Real-Time Analytics Dashboard</h3>
+						<p id="desc-3" style="display: none">
+							A real-time data visualization dashboard for monitoring business
+							metrics, integrating GraphQL for efficient data fetching and
+							updating live data using WebSockets.
+						</p>
+						<p id="more-desc-3">
+							<span
+								style="cursor: pointer"
+								id="btn-desc-3"
+								onclick="toggleDescription('desc-3')"
+								>Read more</span
+							>
+						</p>
+						<p>
+							<strong>Tech Stack:</strong> GraphQL, React, WebSockets,
+							PostgreSQL, Tailwind CSS
+						</p>
+					</div>
+					<!-- Project 4 -->
+					<div class="project-card">
+						<img
+							src="assets/block.png"
+							alt="Project screenshot"
+							class="project-image"
+						/>
+						<h3>Blockchain-Based Payment System</h3>
+						<p id="desc-4" style="display: none">
+							A secure and transparent payment system built on Ethereum,
+							allowing peer-to-peer transactions with minimal fees and instant
+							settlement.
+						</p>
+						<p id="more-desc-4">
+							<span
+								style="cursor: pointer"
+								id="btn-desc-4"
+								onclick="toggleDescription('desc-4')"
+								>Read more</span
+							>
+						</p>
+						<p>
+							<strong>Tech Stack:</strong> Solidity, Ethereum, Node.js, Web3.js,
+							PostgreSQL
+						</p>
+					</div>
+				</div>
+
+				<!-- Contact Section -->
+				<h2 id="contact" class="contact-title scroll-section">Contact Me</h2>
+				<div class="contact-form scroll-section">
+					<div class="form-group">
+						<label for="name" class="form-label">Your Name</label>
+						<input
+							type="text"
+							id="name"
+							class="form-input"
+							placeholder="Enter your name"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email" class="form-label">Your Email</label>
+						<input
+							type="email"
+							id="email"
+							class="form-input"
+							placeholder="Enter your email"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="message" class="form-label">Message</label>
+						<textarea
+							id="message"
+							class="form-textarea"
+							placeholder="Write your message here"
+						></textarea>
+					</div>
+					<button class="submit-button">Send Message</button>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="footer-content scroll-section">
+				<div class="footer-logo">
+					<p>&copy; 2024 YourCompany. All rights reserved.</p>
+				</div>
+				<div class="footer-links">
+					<ul>
+						<li><a href="#privacy">Privacy Policy</a></li>
+						<li><a href="#terms">Terms of Service</a></li>
+						<li><a href="#contact">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer-socials">
+					<a href="#" class="social-icon">Github</a>
+					<a href="#" class="social-icon">Twitter</a>
+					<a href="#" class="social-icon">Instagram</a>
+				</div>
+			</div>
+		</footer>
+
+		<script>
+			function toggleDescription(descId) {
+				const description = document.getElementById(descId);
+				const btn = document.getElementById("btn-" + descId);
+
+				if (description.style.display === "none") {
+					description.style.display = "block";
+					btn.textContent = "Hide";
+				} else {
+					description.style.display = "none";
+					btn.textContent = "Read more";
+				}
+			}
+			const hamburger = document.getElementById("hamburger");
+			const navLinks = document.querySelector(".nav-links");
+
+			hamburger.addEventListener("click", () => {
+				navLinks.classList.toggle("active");
+			});
+			let lastScrollY = window.scrollY;
+
+			const sections = document.querySelectorAll(".scroll-section");
+
+			// Handle scroll event
+			function handleScroll() {
+				const currentScrollY = window.scrollY;
+				const scrollDirection = currentScrollY > lastScrollY ? "down" : "up";
+
+				sections.forEach((section) => {
+					const rect = section.getBoundingClientRect();
+					const inViewport = rect.top >= 0 && rect.top <= window.innerHeight;
+
+					if (inViewport) {
+						section.classList.add("show", scrollDirection);
+						section.classList.remove("hide");
+					} else {
+						// Remove 'show' class and add 'hide'
+						section.classList.remove("show", "down", "up");
+						section.classList.add("hide");
+					}
+				});
+
+				lastScrollY = currentScrollY;
+			}
+
+			window.addEventListener("scroll", handleScroll);
+		</script>
+	</body>
+</html>
